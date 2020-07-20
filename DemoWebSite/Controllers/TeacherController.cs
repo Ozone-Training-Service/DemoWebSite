@@ -9,6 +9,7 @@ namespace DemoWebSite.Controllers
     public class TeacherController:Controller
     {
 
+
         public IActionResult Index()
         {
 
