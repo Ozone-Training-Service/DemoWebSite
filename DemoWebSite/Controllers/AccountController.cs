@@ -18,11 +18,12 @@ namespace DemoWebSite.Controllers
         [HttpPost]
         public IActionResult SignIn(string name, string address, string email)
         {
-            // to db
-
+          
+            // to file
 
             // email sending code
 
+            //
             EmailSending obj = new EmailSending();
 
             Random rn = new Random();
