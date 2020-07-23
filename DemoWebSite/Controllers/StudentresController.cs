@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DemoWebSite.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DemoWebSite.Controllers
@@ -12,10 +13,11 @@ namespace DemoWebSite.Controllers
         {
             return View();
         }
-        public IActionResult student()
+        [HttpPost]
+        public IActionResult Addstudent(Student student)
         {
 
-            return View();
+            return View(student);
         }
     }
 }
