@@ -12,7 +12,7 @@ namespace DemoWebSite.Models
         public string Name { get; set; }
 
         public string Dob { get; set; }
-        public int RollNo { get; set; }
+        public String Address { get; set; }
 
     }
 }
