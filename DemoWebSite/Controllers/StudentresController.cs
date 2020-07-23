@@ -12,8 +12,9 @@ namespace DemoWebSite.Controllers
         {
             return View();
         }
-        public IActionResult Index()
+        public IActionResult student()
         {
+
             return View();
         }
     }
