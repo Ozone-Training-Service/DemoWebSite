@@ -24,7 +24,7 @@ namespace DemoWebSite.Utils
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
-            mail.From = new MailAddress("vishnukumarps2017@gmail.com"); // From
+            mail.From = new MailAddress("vishnuvis0016@gmail.com"); // From
 
             mail.To.Add(toAddress);// To
             mail.Subject = subject;
@@ -32,7 +32,7 @@ namespace DemoWebSite.Utils
 
 
             SmtpServer.Port = 587;
-            SmtpServer.Credentials = new System.Net.NetworkCredential("vishnukumarps2017@gmail.com", "vISHNU@123");
+            SmtpServer.Credentials = new System.Net.NetworkCredential("Vishnuvis0016@gmail.com", "Snakegame005");
             SmtpServer.EnableSsl = true;
 
             SmtpServer.Send(mail);
