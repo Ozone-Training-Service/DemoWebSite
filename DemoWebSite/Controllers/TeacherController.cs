@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DemoWebSite.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,10 +23,28 @@ namespace DemoWebSite.Controllers
         public IActionResult AddTeacher(string name,string dpt)
         {
 
+
+
+
+
             ViewBag.Name = name;
             ViewBag.Dpt = dpt;
 
+
             return View();
         }
+        //
+
+        [HttpPost]
+        public IActionResult AddTeacherAgain(Teacher teacher)
+        {
+
+
+
+           
+
+            return View(teacher);
+        }
+
     }
 }
