@@ -23,10 +23,13 @@ namespace DemoWebSite.Controllers
         public IActionResult AddTeacher(string name,string dpt)
         {
 
-           
+
+
+
 
             ViewBag.Name = name;
             ViewBag.Dpt = dpt;
+
 
             return View();
         }
@@ -38,9 +41,9 @@ namespace DemoWebSite.Controllers
 
 
 
-            ViewBag.NAME = teacher.Name;
+           
 
-            return View();
+            return View(teacher);
         }
 
     }
