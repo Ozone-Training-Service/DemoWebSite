@@ -12,7 +12,11 @@ namespace DemoWebSite.Models
         public string Name { get; set; }
 
         public string Dob { get; set; }
-        public String Address { get; set; }
+        public int RollNo { get; set; }
+        public int Address { get; set; }
+        public int Marks { get; set; }
+
+        public int TotalMark { get; set; }
 
     }
 }
