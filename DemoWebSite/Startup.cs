@@ -50,7 +50,7 @@ namespace DemoWebSite
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Account}/{action=Index}/{id?}");
+                    pattern: "{controller=Teacher}/{action=TeacherList}/{id?}");
             });
         }
     }

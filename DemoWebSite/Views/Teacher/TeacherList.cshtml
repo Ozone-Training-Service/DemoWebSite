@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Teacher>
+
+<h1 align="ceneter">Teachers</h1>
+
+
+<table border="1">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Department</td>
+        <td>MobileNumber</td>
+        <td>Address</td>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+<tr>
+    <td>@item.Id</td>
+    <td>@item.Name</td>
+    <td>@item.Department</td>
+    <td>@item.MobileNumber</td>
+    <td>@item.Address</td>
+    <td><button class="btn btn-success">Edit</button></td>
+</tr>
+
+    }
+
+</table>
